@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814919525753",
+    "project_id": "hakaton-dccac",
+    "storage_bucket": "hakaton-dccac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814919525753:android:20ec44cdae7ae7fcc43ba8",
+        "android_client_info": {
+          "package_name": "com.boogoo.hakaton"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxjskQhFQ3tgEYoFgtbn_P5mdCI9TbnqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

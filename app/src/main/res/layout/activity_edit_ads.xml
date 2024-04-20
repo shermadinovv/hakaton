@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/place_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@color/grey"
+    android:onClick="onClickPublish"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".act.EditAdsAct">
+
+    <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/blue_light"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scroolViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardAddress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvTitleCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/country"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="onClickSelectCountry"
+                        android:padding="10dp"
+                        android:text="@string/select_country"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/divider1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitleCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/city"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/tvCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClickSelectCity"
+                        android:padding="10dp"
+                        android:text="@string/select_city"
+                        android:textColor="#000000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/divider2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitleTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/tel"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/tel_number"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider3"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvTitleIndex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/index"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edIndex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/index"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider4"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardUniversity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvSchool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/univ"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edSchool"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/univ_print"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider12"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvSchoolStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/univ_start"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edSchoolStart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/print"
+                        android:inputType="datetime"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider14"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvSchoolFinish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/univ_end"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edSchoolFinish"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/print"
+                        android:inputType="datetime"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider24"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvFaculty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/faculty"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edFaculty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/faculty_print"
+                        android:inputType="textWebEditText"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider33"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvBolum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/bolum"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edBBolum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/bolum_print"
+                        android:inputType="textWebEditText"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider43"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvSchoolScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/score"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edSchoolScore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/score_print"
+                        android:inputType="textWebEditText"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider13"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/diplom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/blue_light"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/diplom" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CardCategory"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/tvName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/name_"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/printing"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider02"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="10dp"
+                        android:paddingTop="10dp"
+                        android:text="@string/last_name_"
+                        android:textColor="@color/blue_light"
+                        android:textStyle="italic" />
+
+                    <EditText
+                        android:id="@+id/edLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:ems="10"
+                        android:hint="@string/printing"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColorHint="@color/grey" />
+
+                    <LinearLayout
+                        android:id="@+id/divider04"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@color/blue_light"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/blue_light"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/pic" />
+
+                    <Button
+                        android:id="@+id/PassFront"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/blue_light"
+                        android:paddingStart="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/pass_front" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btPublish"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/blue_light"
+                android:onClick="onClickPublish"
+                android:text="@string/push"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

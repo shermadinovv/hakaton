@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">onlinestore</string>
+    <string name="ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_inter_id">ca-app-pub-3940256099942544/1033173712</string>
+
+    <!-- Menu Drawer Strings -->
+    <string name="ad_cat1">Объявления</string>
+    <string name="ad_my_ads">Мои объявления</string>
+    <string name="ad_car">Машины</string>
+    <string name="ad_def">Разное</string>
+    <string name="ad_pc">Компьютеры</string>
+    <string name="ad_smartphones">Смартфоны</string>
+    <string name="ad_dm">Бытовая техника</string>
+    <string name="ad_cat2">Аккаунт</string>
+    <string name="ad_sign_up">Регистрация</string>
+    <string name="ad_sign_in">Вход</string>
+    <string name="ad_sign_out">Выход</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="not_reg">Войдите или зарегестрируйтесь</string>
+
+    <!-- Sign Dialog Strings -->
+    <string name="email_hint">Email</string>
+    <string name="email_name">Имя</string>
+    <string name="email_last_name">Фамилия</string>
+    <string name="email_number">Номер телефона</string>
+    <string name="am_i">Я учитель</string>
+    <string name="email_reset_password_was_send">Сообщение для сброса пароля отправлена вам!</string>
+    <string name="dialog_reset_email_message">Для востановления пароля укажите ваш Email адрес!</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_up_action">Зарегистрироваться</string>
+    <string name="sign_in_action">Войти</string>
+    <string name="forget_password">Забыли пароль?</string>
+    <string name="sign_up_error">Не удалось зарегестрироваться!</string>
+    <string name="sign_in_error">Не удалось войти!</string>
+    <string name="send_verification_email_error">Не удалось отправить email для подтверждения!</string>
+    <string name="send_verification_done">На ваша почту была отправлена ссылка для подтверждения вашего аккаунта,
+        пожалуйста подтвердите ваш аккаунт!</string>
+    <!-- Sign Dialog Strings -->
+    <string name="link_done">Email успешно подключен к Google аккаунту</string>
+    <string name="enter_to_g">У вас уже есть аккаунт с этим Email адресом, войдите по нему!</string>
+
+    <!-- Edit Activity -->
+    <string name="none_selected_country">Выберите сначала город</string>
+    <string name="select_country">*Выберите страну</string>
+    <string name="select_city">*Выберите город</string>
+    <string name="country">Страна</string>
+    <string name="city">Город</string>
+    <string name="index">Индекс</string>
+    <string name="tel">Телефон</string>
+    <string name="tel_number">*Номер телефона</string>
+    <string name="category">Категория</string>
+    <string name="title">Загаловок </string>
+    <string name="title_hint">*Напишите загаловок</string>
+    <string name="select_category">*Выберите категорию</string>
+    <string name="price">Цена</string>
+    <string name="price_hint">Назначьте цену</string>
+    <string name="description">Описание</string>
+    <string name="description_hint">Введите описание</string>
+    <string name="with_send">С отправкой</string>
+    <string name="send">Отправка</string>
+    <string name="publish">опубликовать</string>
+    <string name="default_web_client_id" translatable="false">100993290400-t8ngiadhua43v1gdvuvik2s3ag8ldd3a.apps.googleusercontent.com</string>
+    <string name="ans_to_cont">Выберите ответ чтобы перейти к следущему вопросу ...</string>
+
+
+    <string name="univ">Учебное заведение</string>
+    <string name="univ_print">*Выберите учебное заведение</string>
+    <string name="univ_start">Дата поступления</string>
+    <string name="univ_end">Дата окончания</string>
+    <string name="print">*Выберите дату</string>
+    <string name="faculty">Факультет</string>
+    <string name="faculty_print">*Выберите факультет</string>
+    <string name="bolum">Отделение</string>
+    <string name="bolum_print">*Выберите отделение</string>
+
+    <string name="score">GPA</string>
+    <string name="score_print">*Введите GPA</string>
+
+    <string name="name_">*Имя</string>
+    <string name="last_name_">*Фамилия</string>
+    <string name="printing">*Введите</string>
+
+    <string name="diplom">*Загрузите диплом</string>
+    <string name="pass_front">*Загрузите паспорт</string>
+    <string name="pic">*Загрузите фото профиля</string>
+    <string name="done">Загружeно</string>
+
+
+    <string name="iHaveAcc">У меня уже есть аккаунт!</string>
+    <string name="iDontHaveAcc">У меня нет аккаунта!</string>
+    <string name="push">ОТПРАВИТЬ</string>
+
+
+</resources>
